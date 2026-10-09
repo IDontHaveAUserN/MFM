@@ -1,0 +1,77 @@
+<header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-xl border-b border-surface-container shadow-sm">
+  <div class="h-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex items-center justify-between gap-gutter">
+    <div class="flex items-center gap-3">
+      <a class="flex items-center gap-3 group" href="#">
+        <img alt="MFM Guiné-Bissau Logo"
+             class="h-10 sm:h-12 w-auto object-contain drop-shadow-sm group-hover:scale-105 transition-transform duration-200"
+             src="/MFM/assets/img/church_logo.png" />
+        <div class="flex flex-col">
+          <span class="font-headline-sm text-[17px] sm:text-[19px] font-bold text-brand-purple tracking-tight leading-tight">MFM-GB</span>
+          <span class="font-label-sm text-[9px] sm:text-[10px] font-semibold text-brand-ember uppercase tracking-wider">Sede Regional da Área</span>
+        </div>
+      </a>
+    </div>
+
+    <!-- ========== DESKTOP NAV ========== -->
+    <nav class="hidden lg:flex items-center gap-space-lg">
+      <a class="font-label-md text-[13px] text-brand-purple font-semibold hover:text-brand-ember transition-colors py-space-xs" href="#visit">Cultos</a>
+      <a class="font-label-md text-[13px] text-on-surface-variant hover:text-brand-purple transition-colors py-space-xs" href="#programmes">Programas</a>
+      <a class="font-label-md text-[13px] text-on-surface-variant hover:text-brand-purple transition-colors py-space-xs" href="#sermons">Mensagens</a>
+      <a class="font-label-md text-[13px] text-on-surface-variant hover:text-brand-purple transition-colors py-space-xs" href="#ministries">Ministérios</a>
+      <a class="font-label-md text-[13px] text-on-surface-variant hover:text-brand-purple transition-colors py-space-xs" href="#gallery">Galeria</a>
+      <a class="font-label-md text-[13px] text-on-surface-variant hover:text-brand-purple transition-colors py-space-xs" href="#resources">Recursos</a>
+      <a class="font-label-md text-[13px] text-on-surface-variant hover:text-brand-purple transition-colors py-space-xs" href="#location">Localização</a>
+    </nav>
+
+    <!-- ========== ACTIONS ========== -->
+    <div class="flex items-center gap-2 sm:gap-space-md">
+      <!-- Live indicator — opens YouTube international stream -->
+      <a class="hidden sm:inline-flex items-center gap-space-xs px-3 sm:px-space-md py-1.5 rounded-lg bg-surface-container text-brand-purple font-label-sm text-[12px] hover:bg-surface-container-high transition-colors"
+         href="https://www.youtube.com/@MFMMinistries" target="_blank" rel="noopener noreferrer">
+        <span class="w-1.5 h-1.5 rounded-full bg-error animate-pulse"></span>
+        Ao Vivo
+      </a>
+
+      <!-- Primary CTA — opens the visit modal -->
+      <button type="button" data-modal="visit-sunday"
+              class="inline-flex items-center justify-center px-2 sm:px-space-md py-1.5 rounded-lg bg-gradient-to-r from-brand-gold to-brand-ember text-white font-label-sm text-[12px] font-bold shadow-md hover:opacity-95 hover:shadow-lg transition-all">
+        Planear Visita
+      </button>
+
+      <!-- Mobile menu toggle -->
+      <button aria-label="Abrir Menu"
+              class="lg:hidden p-2 rounded-lg text-brand-purple hover:bg-surface-container"
+              data-mobile-toggle>
+        <span class="material-symbols-outlined text-[22px]">menu</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- ========== MOBILE NAV DRAWER ========== -->
+  <div class="hidden lg:hidden bg-white border-b border-surface-container px-6 py-3 flex flex-col gap-2.5" id="mobile-drawer">
+    <a class="font-label-md text-[13px] text-brand-purple font-semibold" href="#visit" data-mobile-link>Cultos &amp; Horários</a>
+    <a class="font-label-md text-[13px] text-on-surface-variant hover:text-brand-purple" href="#programmes" data-mobile-link>Programas Anuais</a>
+    <a class="font-label-md text-[13px] text-on-surface-variant hover:text-brand-purple" href="#sermons" data-mobile-link>Mensagens &amp; Fogo</a>
+    <a class="font-label-md text-[13px] text-on-surface-variant hover:text-brand-purple" href="#ministries" data-mobile-link>Ministérios</a>
+    <a class="font-label-md text-[13px] text-on-surface-variant hover:text-brand-purple" href="#gallery" data-mobile-link>Galeria</a>
+    <a class="font-label-md text-[13px] text-on-surface-variant hover:text-brand-purple" href="#resources" data-mobile-link>Recursos</a>
+    <a class="font-label-md text-[13px] text-on-surface-variant hover:text-brand-purple" href="#oracao" data-mobile-link>Pedidos de Oração</a>
+    <a class="font-label-md text-[13px] text-on-surface-variant hover:text-brand-purple" href="#location" data-mobile-link>Localização Bissau</a>
+
+    <!-- Divider + secondary action for mobile -->
+    <div class="border-t border-surface-container mt-1 pt-2 flex flex-col gap-2.5">
+      <a class="font-label-md text-[13px] text-on-surface-variant hover:text-brand-purple"
+         href="https://www.youtube.com/@MFMMinistries" target="_blank" rel="noopener noreferrer" data-mobile-link>
+        <span class="inline-flex items-center gap-2">
+          <span class="w-1.5 h-1.5 rounded-full bg-error animate-pulse"></span>
+          Assistir ao Vivo no YouTube
+        </span>
+      </a>
+      <button type="button" data-modal="notices" data-mobile-link
+              class="inline-flex items-center gap-2 self-start px-3 py-2 rounded-lg bg-gradient-to-r from-brand-gold to-brand-ember text-white font-label-sm text-[12px] font-bold shadow-sm">
+        <span class="material-symbols-outlined text-[16px]">notifications</span>
+        Receber Avisos
+      </button>
+    </div>
+  </div>
+</header>

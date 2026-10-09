@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta content="web_standard" name="shell-type" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Montserrat:wght@800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CDN + custom config -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script src="css/tailwind-config.js"></script>
+
+  <!-- GSAP -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body class="bg-background font-body-md text-on-surface antialiased">
+
+  <!-- Injected placeholders -->
+  <div data-include="sections/header.html"></div>
+
+  <main class="w-full pt-20 bg-background min-h-[calc(100vh-20rem)]">
+    <div class="flex flex-col w-full">
+      <div data-include="sections/hero.html"></div>
+      <div data-include="sections/scripture-strip.html"></div>
+      <div data-include="sections/visit.html"></div>
+      <div data-include="sections/programmes.html"></div> 
+      <div data-include="sections/sermons.html"></div>
+      <div data-include="sections/ministries.html"></div>
+      <div data-include="sections/gallery.html"></div> 
+      <div data-include="sections/oracao.html"></div>
+      <div data-include="sections/resources.html"></div>
+      <div data-include="sections/location.html"></div>
+    </div>
+  </main>
+
+  <div data-include="sections/footer.html"></div>
+
+  <!-- ============ UNIVERSAL MODAL ============ -->
+  <div id="site-modal" class="hidden fixed inset-0 z-[200] bg-black/70 backdrop-blur-sm items-center justify-center p-4">
+    <div
+      class="relative w-full max-w-lg bg-white rounded-2xl shadow-2xl border border-surface-container p-space-lg max-h-[92vh] overflow-hidden">
+      <button id="site-modal-close" aria-label="Fechar"
+        class="absolute top-3 right-3 w-9 h-9 rounded-full bg-surface-container hover:bg-surface-container-high text-brand-purple flex items-center justify-center transition-colors">
+        <span class="material-symbols-outlined text-[20px]">close</span>
+      </button>
+      <div id="site-modal-body"></div>
+    </div>
+  </div>
+
+  <!-- Scripts (order matters: loader first, then feature modules) -->
+  <script src="js/load-sections.js"></script>
+  <script src="js/schedule.js"></script>
+  <script src="js/countdown.js"></script>
+</body>
+</html>

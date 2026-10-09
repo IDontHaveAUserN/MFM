@@ -1,0 +1,145 @@
+<!-- 8. PHOTO GALLERY -->
+<section class="w-full py-space-2xl px-6 lg:px-12 bg-surface-container" id="gallery">
+  <div class="max-w-7xl mx-auto">
+
+    <!-- Section header -->
+    <div class="text-center max-w-2xl mx-auto mb-space-xl">
+      <span class="font-label-sm text-[11px] uppercase tracking-widest text-brand-ember font-bold mb-space-xs block">Galeria de Momentos</span>
+      <h2 class="font-headline-lg text-[26px] sm:text-[30px] text-brand-purple font-bold">Momentos de Fogo &amp; Glória</h2>
+      <p class="font-body-sm text-[13px] text-on-surface-variant mt-space-xs">
+        Reviva os momentos marcantes da nossa jornada: cultos, vigílias, evangelismo, batismos e a alegria da comunhão entre irmãos.
+      </p>
+    </div>
+
+    <!-- Filter tabs -->
+    <div class="flex flex-wrap items-center justify-center gap-2 mb-space-lg" id="gallery-filters">
+      <button data-filter="all"
+        class="gallery-filter active px-3 py-1.5 rounded-full font-label-sm text-[11px] font-bold uppercase tracking-wider transition-colors border border-surface-container">Todos</button>
+      <button data-filter="cultos"
+        class="gallery-filter px-3 py-1.5 rounded-full font-label-sm text-[11px] font-bold uppercase tracking-wider transition-colors border border-surface-container">Cultos</button>
+      <button data-filter="vigilias"
+        class="gallery-filter px-3 py-1.5 rounded-full font-label-sm text-[11px] font-bold uppercase tracking-wider transition-colors border border-surface-container">Vigílias</button>
+      <button data-filter="evangelismo"
+        class="gallery-filter px-3 py-1.5 rounded-full font-label-sm text-[11px] font-bold uppercase tracking-wider transition-colors border border-surface-container">Evangelismo</button>
+      <button data-filter="batismos"
+        class="gallery-filter px-3 py-1.5 rounded-full font-label-sm text-[11px] font-bold uppercase tracking-wider transition-colors border border-surface-container">Batismos</button>
+      <button data-filter="juventude"
+        class="gallery-filter px-3 py-1.5 rounded-full font-label-sm text-[11px] font-bold uppercase tracking-wider transition-colors border border-surface-container">Crianças
+        &amp; Juventude</button>
+    </div>
+
+    <!-- Masonry grid -->
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4" id="gallery-grid">
+
+      <!-- 1: Cultos -->
+      <a href="#" class="gallery-item" data-category="cultos" data-full="">
+        <img loading="lazy" class="w-full h-full object-cover"
+             alt="Congregação em louvor no culto de domingo"
+             src="/MFM/assets/img/culto1.jpeg" />
+        <span class="gallery-caption">Culto de Celebração e Milagres</span>
+      </a>
+
+      <!-- 2: Vigílias -->
+      <a href="#" class="gallery-item" data-category="vigilias" data-full="">
+        <img loading="lazy" class="w-full h-full object-cover"
+             alt="Vigília do Fogo e Libertação"
+             src="/MFM/assets/img/youth3.jpeg" />
+        <span class="gallery-caption">Vigília do Fogo &amp; Libertação</span>
+      </a>
+
+      <!-- 3: Cultos -->
+      <a href="#" class="gallery-item" data-category="cultos" data-full="">
+        <img loading="lazy" class="w-full h-full object-cover"
+             alt="Altar da igreja iluminado durante culto"
+             src="/MFM/assets/img/culto9.jpeg" />
+        <span class="gallery-caption">Culto de Vitória &amp; Oração Profética</span>
+      </a>
+
+      <!-- 4: Evangelismo -->
+      <a href="#" class="gallery-item" data-category="evangelismo" data-full="">
+        <img loading="lazy" class="w-full h-full object-cover"
+             alt="Equipa de evangelismo em comunhão"
+             src="/MFM/assets/img/evangelism1.jpeg" />
+        <span class="gallery-caption">Dia Global de Evangelismo</span>
+      </a>
+
+      <!-- 5: Cultos -->
+      <a href="#" class="gallery-item" data-category="cultos" data-full="">
+        <img loading="lazy" class="w-full h-full object-cover"
+             alt="Bíblia aberta sobre o púlpito"
+             src="/MFM/assets/img/culto8.jpeg" />
+        <span class="gallery-caption">Ministração da Palavra de Deus</span>
+      </a>
+
+      <!-- 6: Vigílias -->
+      <a href="#" class="gallery-item" data-category="vigilias" data-full="">
+        <img loading="lazy" class="w-full h-full object-cover"
+             alt="Momento de oração na vigília noturna"
+             src="/MFM/assets/img/vigil1.jpeg" />
+        <span class="gallery-caption">Vigília dos Intercessores</span>
+      </a>
+
+      <!-- 7: Juventude -->
+      <a href="#" class="gallery-item" data-category="juventude" data-full="">
+        <img loading="lazy" class="w-full h-full object-cover"
+             alt="Jovens em comunhão após o culto"
+             src="/MFM/assets/img/kid1.jpeg" />
+        <span class="gallery-caption">Crianças e Juventude de Fogo</span>
+      </a>
+
+      <!-- 8: Batismos -->
+      <a href="#" class="gallery-item" data-category="batismos" data-full="">
+        <img loading="lazy" class="w-full h-full object-cover"
+             alt="Batismo nas águas"
+             src="/MFM/assets/img/bap1.jpeg" />
+        <span class="gallery-caption">Batismo nas Águas</span>
+      </a>
+
+      <!-- 9: Cultos -->
+      <a href="#" class="gallery-item" data-category="cultos" data-full="">
+        <img loading="lazy" class="w-full h-full object-cover"
+             alt="Congregação com mãos erguidas em adoração"
+             src="/MFM/assets/img/culto10.jpeg" />
+        <span class="gallery-caption">Adoração no Altar de Fogo</span>
+      </a>
+
+    </div>
+
+    <!-- CTA -->
+    <div class="text-center mt-space-xl">
+      <button type="button" id="gallery-open-full"
+        class="inline-flex items-center gap-2 px-space-lg py-2 rounded-lg bg-brand-purple text-white font-label-sm text-[12px] font-bold hover:bg-brand-purple-dark transition-colors shadow">
+        <span class="material-symbols-outlined text-[16px]">photo_library</span>
+        Ver Todas as Fotos no Álbum Completo
+      </button>
+    </div>
+  </div>
+
+  <!-- Lightbox overlay -->
+  <div id="gallery-lightbox"
+    class="hidden fixed inset-0 z-[100] bg-black/90 backdrop-blur-sm items-center justify-center p-4">
+    <!-- Close -->
+    <button id="gallery-lightbox-close" aria-label="Fechar"
+      class="absolute top-4 right-4 text-white/80 hover:text-white w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition z-10">
+      <span class="material-symbols-outlined text-[22px]">close</span>
+    </button>
+  
+    <!-- Previous -->
+    <button id="gallery-lightbox-prev" aria-label="Anterior"
+      class="absolute left-3 sm:left-6 top-1/2 -translate-y-1/2 text-white/80 hover:text-white w-11 h-11 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition z-10">
+      <span class="material-symbols-outlined text-[26px]">chevron_left</span>
+    </button>
+  
+    <!-- Next -->
+    <button id="gallery-lightbox-next" aria-label="Próximo"
+      class="absolute right-3 sm:right-6 top-1/2 -translate-y-1/2 text-white/80 hover:text-white w-11 h-11 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition z-10">
+      <span class="material-symbols-outlined text-[26px]">chevron_right</span>
+    </button>
+  
+    <!-- Image + caption -->
+    <img id="gallery-lightbox-img" src="" alt="" class="max-h-[88vh] max-w-[92vw] rounded-xl shadow-2xl object-contain" />
+    <p id="gallery-lightbox-caption"
+      class="absolute bottom-6 left-1/2 -translate-x-1/2 text-white/90 font-body-sm text-[13px] text-center max-w-lg px-4">
+    </p>
+  </div>
+</section>

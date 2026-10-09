@@ -1,0 +1,92 @@
+<!-- 7. LOCATION & SERVICE SCHEDULE ARCHITECTURAL MAP BLOCK -->
+<section class="w-full py-space-2xl px-6 lg:px-12 bg-background" id="location">
+  <div class="max-w-7xl mx-auto">
+    <div class="rounded-3xl bg-brand-purple-dark text-on-primary p-space-xl lg:p-space-2xl shadow-2xl overflow-hidden relative border border-brand-purple/50">
+      <div class="absolute -bottom-20 -right-20 w-80 h-80 rounded-full bg-brand-ember/25 blur-3xl pointer-events-none"></div>
+      <div class="absolute -top-20 -left-20 w-80 h-80 rounded-full bg-brand-gold/20 blur-3xl pointer-events-none"></div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter relative z-10 items-center">
+
+        <!-- Left: Text info -->
+        <div class="lg:col-span-6">
+          <span class="font-label-sm text-[10px] uppercase tracking-widest text-amber-300 font-bold mb-space-xs block">Sede Nacional da Guiné-Bissau</span>
+          <h2 class="font-headline-lg text-[24px] sm:text-[28px] text-white font-bold mb-space-sm">Encontre a MFM em Bissau</h2>
+          <p class="font-body-sm text-[13px] text-purple-200 leading-relaxed mb-space-lg max-w-xl">
+            Venha estar connosco neste templo de poder. Um ambiente acolhedor, preparado para receber você e toda a sua família na presença manifesta de Deus.
+          </p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm mb-space-lg">
+            <div>
+              <h4 class="font-title-md text-[13px] text-amber-300 font-semibold mb-0.5">Localização</h4>
+              <p class="font-body-sm text-[12px] text-purple-200 leading-relaxed">
+                Sede MFM Guiné-Bissau<br />
+                Perto da <strong class="text-amber-200 font-semibold">Farmácia Plack 2</strong>, em frente ao primeiro portão de Arma<br />
+                Bissau, República da Guiné-Bissau
+              </p>
+            </div>
+            <div>
+              <h4 class="font-title-md text-[13px] text-amber-300 font-semibold mb-0.5">Linha de Oração &amp; Apoio</h4>
+              <p class="font-body-sm text-[12px] text-purple-200 leading-relaxed">
+                Atendimento e Apoio Espiritual:<br />
+                (+245) 955 268 076<br />
+                969 296 695
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-space-sm">
+            <!-- Dynamic directions: opens Google Maps routed from the user's current location -->
+            <a class="inline-flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-gradient-to-r from-brand-gold to-brand-ember text-white font-label-sm text-[12px] font-bold shadow hover:opacity-90 transition-opacity"
+               href="https://www.google.com/maps/dir/?api=1&destination=Farm%C3%A1cia+Plack+2+Bissau+Guin%C3%A9-Bissau&travelmode=driving"
+               target="_blank" rel="noopener noreferrer">
+              <span class="material-symbols-outlined text-[16px]">directions</span>
+              Obter Direções
+            </a>
+
+            <!-- WhatsApp — replace 245955000000 with the actual ministry number -->
+            <a class="inline-flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-white/10 hover:bg-white/20 text-white font-label-sm text-[12px] border border-white/20 backdrop-blur-md transition-colors"
+               href="https://wa.me/245969296695?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20a%20localiza%C3%A7%C3%A3o%20da%20MFM%20Guin%C3%A9-Bissau"
+               target="_blank" rel="noopener noreferrer">
+              <span class="material-symbols-outlined text-[16px]">chat</span>
+              Falar pelo WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Live Google Maps embed pointing at Farmácia Plack 2 -->
+        <div class="lg:col-span-6">
+          <div class="w-full h-72 sm:h-80 rounded-2xl shadow-2xl relative overflow-hidden border border-white/10 bg-brand-purple">
+
+            <!-- Live interactive map -->
+            <iframe
+              title="Mapa da MFM Guiné-Bissau (perto da Farmácia Plack 2)"
+              class="absolute inset-0 w-full h-full"
+              src="https://www.google.com/maps?q=Farm%C3%A1cia%20Plack%202%2C%20Bissau%2C%20Guin%C3%A9-Bissau&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen>
+            </iframe>
+
+            <!-- Overlay badge -->
+            <div class="absolute bottom-space-sm left-space-sm right-space-sm p-space-sm rounded-xl bg-brand-purple-dark/95 border border-amber-400/30 backdrop-blur-md text-white shadow-lg pointer-events-none">
+              <div class="flex items-center justify-between">
+                <span class="font-label-sm text-[11px] font-bold text-amber-300 flex items-center gap-1.5">
+                  <span class="material-symbols-outlined text-[16px] text-brand-ember">pin_drop</span>
+                  MFM Guiné-Bissau
+                </span>
+                <span class="font-label-sm text-[10px] text-purple-200">Portas Abertas a Todos</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Helper note -->
+          <p class="font-body-sm text-[11px] text-purple-300 mt-space-sm text-center sm:text-left">
+            <span class="material-symbols-outlined text-[12px] align-middle text-amber-300">info</span>
+            Referência próxima: <strong class="text-amber-200">Farmácia Plack 2, em frente ao primeiro portão de Arma</strong>
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
